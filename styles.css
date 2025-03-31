@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.input-section {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sentiment-meters {
+    margin: 20px 0;
+}
+
+.meter {
+    height: 30px;
+    background: #f0f0f0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.meter-fill {
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s;
+}
+
+.positive .meter-fill { background: #4CAF50; }
+.neutral .meter-fill { background: #FFC107; }
+.negative .meter-fill { background: #F44336; }
+
+.comment {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 3px solid;
+}
+
+.positive-comment { border-color: #4CAF50; }
+.neutral-comment { border-color: #FFC107; }
+.negative-comment { border-color: #F44336; }
+
+#loading {
+    text-align: center;
+    padding: 20px;
+}
+
+#error {
+    color: #F44336;
+    padding: 10px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Sentiment Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Comment Sentiment Analysis</h1>
+        <div class="input-section">
+            <input type="text" id="videoId" placeholder="Enter YouTube Video ID">
+            <button id="analyzeBtn">Analyze</button>
+        </div>
+        <div id="results" class="hidden">
+            <div class="summary">
+                <h2>Sentiment Analysis Results</h2>
+                <div class="sentiment-meters">
+                    <div class="meter positive">
+                        <div class="meter-fill" id="positiveMeter"></div>
+                        <span id="positiveText">Positive: 0% (0)</span>
+                    </div>
+                    <div class="meter neutral">
+                        <div class="meter-fill" id="neutralMeter"></div>
+                        <span id="neutralText">Neutral: 0% (0)</span>
+                    </div>
+                    <div class="meter negative">
+                        <div class="meter-fill" id="negativeMeter"></div>
+                        <span id="negativeText">Negative: 0% (0)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="comments">
+                <h3>Sample Comments</h3>
+                <div id="commentsContainer"></div>
+            </div>
+        </div>
+        <div id="loading" class="hidden">Analyzing comments...</div>
+        <div id="error" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
